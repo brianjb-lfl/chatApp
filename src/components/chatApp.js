@@ -17,13 +17,10 @@ export default class ChatApp extends React.Component {
       messages: [...this.state.messages, {text}]
     })
   }
-
-
-
   render() {
     return (
       <div><MessageList msgTxt={"test"}/>
-      <InputForm /></div>
+      <InputForm onAdd={text => this.handleAdd(text)} /></div>
     );
   }
 
