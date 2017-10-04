@@ -3,10 +3,8 @@ import './message.css';
 
 export default function MessageList(props) {
 
-
-
   return (
-    <div>{props.msgTxt}</div>
+    <div>{props.message}</div>
   );
 
 }
