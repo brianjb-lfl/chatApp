@@ -5,7 +5,7 @@ export default class InputForm extends React.Component {
   constructor(props){
     super(props); 
     this.state = {
-      user: '1'
+      user: 'user1'
     }
   }
 
@@ -34,8 +34,8 @@ export default class InputForm extends React.Component {
         <select  
           value={this.state.user} 
           onChange={e => this.setUser(e.target.value)} >
-          <option value="1">User 1</option>
-          <option value="2">User 2</option>
+          <option value="user1">User 1</option>
+          <option value="user2">User 2</option>
         </select>
         <form onSubmit={(e) => this.onSubmit(e)}> 
           <input type="text" ref={input => this.inputText = input} />
