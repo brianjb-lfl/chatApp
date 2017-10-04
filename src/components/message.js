@@ -10,7 +10,6 @@ export default function MessageList(props) {
   return (
       <div className={currentUser}>
         <p>{props.message.message}</p>
-        <p></p>
         <p className="messageData">{props.message.user} <i>{Moment(props.message.created).format('MMMM Do YYYY h:mm:ss a')}</i></p>
       </div>
   );

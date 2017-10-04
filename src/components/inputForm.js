@@ -33,12 +33,13 @@ export default class InputForm extends React.Component {
       <div>
         <select  
           value={this.state.user} 
-          onChange={e => this.setUser(e.target.value)} >
+          onChange={e => this.setUser(e.target.value)}
+          className="userSelect" >
           <option value="user1">User 1</option>
           <option value="user2">User 2</option>
         </select>
         <form onSubmit={(e) => this.onSubmit(e)}> 
-          <input type="text" ref={input => this.inputText = input} />
+          <input className="formInput" type="text" ref={input => this.inputText = input} />
         </form>
       </div>
     );
