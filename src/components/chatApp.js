@@ -3,6 +3,7 @@
 import React from 'react';
 import MessageList from './messageList';
 import InputForm from './inputForm';
+import './chatApp.css'; 
 
 export default class ChatApp extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export default class ChatApp extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="master-container">
         <InputForm onAdd={(text, user, created) => this.handleAdd(text, user, created)} />
         <MessageList msgArr={this.state.messages}/>
       </div>

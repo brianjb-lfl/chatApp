@@ -1,10 +1,30 @@
 .user2 {
     background-color: #58595b;
-    color: white; 
+    float: right;
+    clear: left;  
 }
 
 .user1 {
     background-color:#32466d; 
-    color: white; 
-
+    float: left; 
+    clear: right; 
 }
+
+.messageContainer {
+    color: white;
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 8px; 
+    margin: 20px 0px; 
+}
+
+.messageData {
+    font-size: 12px; 
+}
+
+@media screen and (max-width: 500px){
+    .messageContainer {
+        width: 70%;
+    } 
+}
+

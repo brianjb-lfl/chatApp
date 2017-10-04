@@ -5,11 +5,13 @@ import './messageList.css';
 export default function MessageList(props) {
 
   const mappedArr = props.msgArr.map( (msg, idx) => (
-    <Message key={idx} message={msg} />
+      <Message key={idx} message={msg} />
   ));
 
   return (
-    <div>{mappedArr}</div>
+    <div>
+      {mappedArr}
+    </div>
   );
 
 }
