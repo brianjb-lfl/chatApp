@@ -13,10 +13,10 @@ export default class InputForm extends React.Component {
     event.preventDefault();
     const text = this.inputText.value.trim();
     const user = this.state.user
-    
+    const created = Date.now(); 
     if (text && this.props.onAdd) {
       console.log(user, "CHILD USER"); 
-        this.props.onAdd(text, user);
+        this.props.onAdd(text, user, created);
     }
     this.inputText.value = '';
   }
