@@ -5,7 +5,7 @@ import './messageList.css';
 export default function MessageList(props) {
 
   const mappedArr = props.msgArr.map( (msg, idx) => (
-    <li>{msg}</li>
+    <li key={idx}>{msg}</li>
   ));
 
 
