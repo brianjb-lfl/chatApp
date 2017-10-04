@@ -8,19 +8,20 @@ export default class ChatApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      messages: []            // {key: , user: , msgStr: }
+      messages: []            // {user: , msgStr: }
     }
   }
 
-  handleAdd(text) {
+  handleAdd(text, user) {
+    console.log(user, "THIS IS THE USER")
     this.setState({
-      messages: [...this.state.messages, text]
+      messages: [...this.state.messages, {message: text, user: user}]
     })
   }
   render() {
     return (
       <div><MessageList msgArr={this.state.messages}/>
-      <InputForm onAdd={text => this.handleAdd(text)} /></div>
+      <InputForm onAdd={(text, user) => this.handleAdd(text, user)} /></div>
     );
   }
 

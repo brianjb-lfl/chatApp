@@ -8,7 +8,6 @@ export default function MessageList(props) {
     <Message key={idx} message={msg} />
   ));
 
-
   return (
     <div>{mappedArr}</div>
   );

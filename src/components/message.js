@@ -4,7 +4,10 @@ import './message.css';
 export default function MessageList(props) {
 
   return (
-    <div>{props.message}</div>
+    <div>
+      <p>message: {props.message.message}</p>
+      <p>user: {props.message.user}</p>
+    </div>
   );
 
 }
