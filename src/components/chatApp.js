@@ -14,7 +14,7 @@ export default class ChatApp extends React.Component {
 
   handleAdd(text) {
     this.setState({
-      messages: [...this.state.messages, {text}]
+      messages: [...this.state.messages, text]
     })
   }
   render() {
